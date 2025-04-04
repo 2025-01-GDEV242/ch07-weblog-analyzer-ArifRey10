@@ -35,6 +35,17 @@ public class LogAnalyzer
         }
     }
 
+    public int numberOfAccesses() 
+    {
+         int total = 0;
+         for(int count : hourCounts)
+        {
+           total += count;
+        }
+        
+        return total;
+    } 
+        
     /**
      * Print the hourly counts.
      * These should have been set with a prior
